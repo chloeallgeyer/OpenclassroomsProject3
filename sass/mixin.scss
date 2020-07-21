@@ -1,0 +1,7 @@
+@mixin shading {
+    background: linear-gradient(to right, rgba(26,114,14,0.98) 0%,rgba(26,114,14,0.98) 1%,rgba(197,255,186,1) 100%);
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
