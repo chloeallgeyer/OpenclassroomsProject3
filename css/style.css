@@ -1,90 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Devonshire&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Katibeh&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
 /* ------------- body ------------- */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Epilogue", sans-serif;
-  font-weight: 400;
-  color: #ffcc00;
-}
-
-/* ------------- header ------------- */
-header {
-  background-color: #569c87;
-  width: 100%;
-  text-align: center;
-  padding: 15px 0;
-  margin-bottom: 50px;
-}
-
-/* ------------- main ------------- */
-.block {
-  display: flex;
-  flex-direction: column;
-}
-.block__item {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 0;
-}
-.block__item__card {
-  width: 400px;
-  height: 600px;
-  margin: 30px;
-  box-shadow: 0px 0px 8px #a6a6a6;
-  text-align: center;
-  font-size: 30px;
-}
-
-.menu1 {
-  background-color: #f9d2d2;
-  font-family: "Devonshire", cursive;
-}
-
-.menu2 {
-  background-color: #FEF3F3;
-}
-
-.menu3 {
-  background-color: #eeeef6;
-}
-
-.menu4 {
-  background-color: #fff;
-  font-family: "Kaushan Script", cursive;
-}
-
-/* ------------- aside ------------- */
-h2 {
-  text-align: center;
-  padding: 10px;
-  width: 300px;
-  background-color: #569c87;
-  border: 1px solid #569c87;
-  border-radius: 10px;
-  margin: 0 auto 100px auto;
-}
-
-/* ------------- footer ------------- */
-footer {
-  display: flex;
-  justify-content: space-between;
-  background-color: #569c87;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-}
-footer p {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-footer p:hover {
-  animation: wiggle ease-in-out 500ms infinite;
-}
-
+/* ------------- cards ------------- */
 @keyframes wiggle {
   0% {
     transform: translate(1px, 1px) rotate(0deg);
@@ -119,6 +41,172 @@ footer p:hover {
   100% {
     transform: translate(1px, -2px) rotate(-1deg);
   }
+}
+/* ------------- body ------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 400;
+  color: #ffcc00;
+}
+
+/* ------------- header ------------- */
+header {
+  background-color: #569c87;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  margin-bottom: 30px;
+}
+
+/* ------------- main ------------- */
+.block {
+  display: flex;
+  flex-direction: column;
+}
+.block__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 0;
+}
+.block__item__card {
+  width: 400px;
+  height: 600px;
+  margin: 30px;
+  box-shadow: 0px 0px 8px #a6a6a6;
+  text-align: center;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu1 {
+  background-color: #f9d2d2;
+  color: black;
+}
+.menu1 h2 {
+  font-family: "Devonshire", cursive;
+  font-weight: normal;
+  margin: 0;
+}
+.menu1 h3 {
+  font-family: "Sriracha", cursive;
+  font-size: 50px;
+  font-weight: lighter;
+  margin: 0;
+}
+.menu1 i {
+  background: linear-gradient(to right, #ff0066 0%, #ff9966 70%);
+  background-clip: border-box;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.menu2 {
+  background-color: #FEF3F3;
+  font-family: "Katibeh", cursive;
+}
+.menu2 h2 {
+  background: linear-gradient(to bottom right, #ff9900 0%, #e67300 1%, #8080ff 100%);
+  background-clip: border-box;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin: 0;
+  filter: brightness(120%);
+}
+.menu2 h3 {
+  font-size: 50px;
+  color: #cc7a00;
+  font-weight: normal;
+  margin: 0;
+}
+
+.menu3 {
+  background-color: #eeeef6;
+}
+.menu3 h2 {
+  font-family: "Dancing Script", cursive;
+  background: linear-gradient(to bottom right, #0000b3 0%, #3385ff 70%);
+  background-clip: border-box;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin: 0;
+}
+.menu3 h3 {
+  font-family: "Kalam", cursive;
+  font-size: 50px;
+  font-weight: normal;
+  color: #3385ff;
+  margin: 0;
+}
+
+.menu4 {
+  background-color: #fff;
+}
+.menu4 h2 {
+  font-family: "Kaushan Script", cursive;
+  background: linear-gradient(to bottom right, #006600 0%, #bdfd81 70%);
+  background-clip: border-box;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin: 0;
+}
+.menu4 h3 {
+  font-family: "Kalam", cursive;
+  font-size: 50px;
+  font-weight: normal;
+  color: #56b003;
+  margin: 0;
+}
+
+.title-wraper {
+  font-size: 25px;
+  cursor: pointer;
+  transform: scale(1);
+  opacity: 1;
+  transition: all 500ms;
+}
+.title-wraper:hover {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+
+/* ------------- aside ------------- */
+.pre-footer {
+  padding: 10px;
+  width: 300px;
+  background-color: #569c87;
+  border: 1px solid #569c87;
+  border-radius: 10px;
+  margin: 30px auto 100px auto;
+}
+.pre-footer h2 {
+  margin: 0;
+  text-align: center;
+}
+
+/* ------------- footer ------------- */
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #569c87;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+footer p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+footer p:hover {
+  animation: wiggle ease-in-out 500ms infinite;
 }
 
 /*# sourceMappingURL=style.css.map */
