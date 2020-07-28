@@ -6,6 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
 /* ------------- body ------------- */
+/* ------------- fonts ------------- */
 /* ------------- cards ------------- */
 @keyframes loading-dots {
   50% {
@@ -67,6 +68,214 @@ header {
 }
 
 /* ------------- main ------------- */
+.menucontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  margin: auto;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  height: 825px;
+  background-color: #f9d2d2;
+  font-family: "Devonshire", cursive;
+  box-shadow: 0px 0px 8px #a6a6a6;
+  margin-bottom: 100px;
+  padding: 30px 80px;
+}
+.menu__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.menu__header h2 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+.menu__body {
+  font-family: "Kalam", cursive;
+}
+.menu__body__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.menu__body__title p {
+  margin: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.menu__body__section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu__body__section__meal {
+  justify-content: flex-start;
+  text-align: start;
+}
+.menu__body__section__price {
+  justify-content: flex-end;
+  text-align: end;
+}
+.menu__footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.menu__footer i {
+  margin-right: 15px;
+}
+.menu__footer h3 {
+  font-size: 30px;
+}
+
+/* ------------- footer ------------- */
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #569c87;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+footer a {
+  text-decoration: none;
+  color: #ffcc00;
+}
+footer p {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+footer p:hover {
+  animation: wiggle ease-in-out 500ms infinite;
+}
+
+/* ------------- body ------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 400;
+  color: #ffcc00;
+}
+
+/* ------------- header ------------- */
+header {
+  background-color: #569c87;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  margin-bottom: 30px;
+}
+
+/* ------------- main ------------- */
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  height: 825px;
+  background-color: #f9d2d2;
+  margin-bottom: 100px;
+  padding: 30px 80px;
+}
+.menu__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.menu__header h2 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+.menu__body {
+  font-family: "Kalam", cursive;
+}
+.menu__body__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu__body__title p {
+  margin: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.menu__body__section {
+  display: flex;
+  flex-direction: row;
+}
+.menu__body__section__meal {
+  justify-content: flex-start;
+  text-align: start;
+}
+.menu__body__section__price {
+  justify-content: flex-end;
+  text-align: end;
+}
+.menu__footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.menu__footer i {
+  margin-right: 15px;
+}
+.menu__footer h3 {
+  font-size: 30px;
+}
+
+/* ------------- footer ------------- */
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #569c87;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+footer a {
+  text-decoration: none;
+  color: #ffcc00;
+}
+footer p {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+footer p:hover {
+  animation: wiggle ease-in-out 500ms infinite;
+}
+
+/* ------------- body ------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 400;
+  color: #ffcc00;
+}
+
+/* ------------- header ------------- */
+header {
+  background-color: #569c87;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  margin-bottom: 30px;
+}
+
+/* ------------- main ------------- */
 .block {
   display: flex;
   flex-direction: column;
@@ -91,22 +300,37 @@ header {
   justify-content: center;
 }
 
+a {
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
 .menu1 {
   background-color: #f9d2d2;
-  color: black;
 }
 .menu1 h2 {
   font-family: "Devonshire", cursive;
   font-weight: normal;
   margin: 0;
+  color: black;
+  /* DRY */
 }
 .menu1 h3 {
   font-family: "Sriracha", cursive;
   font-size: 50px;
   font-weight: lighter;
   margin: 0;
+  color: black;
+  /* DRY */
 }
-.menu1 i {
+
+i {
   background: linear-gradient(to right, #ff0066 0%, #ff9966 70%);
   background-clip: border-box;
   background-clip: text;
@@ -240,42 +464,6 @@ footer p {
 }
 footer p:hover {
   animation: wiggle ease-in-out 500ms infinite;
-}
-
-.menucontainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: black;
-  font-family: "Devonshire", cursive;
-}
-
-table {
-  border-collapse: collapse;
-  text-align: center;
-}
-table:nth-child(3) {
-  margin-bottom: 100px;
-}
-
-caption {
-  caption-side: top;
-  text-align: center;
-  padding: 30px 0;
-}
-
-td {
-  text-align: left;
-  padding: 5px 5px;
-}
-
-thead tr {
-  text-align: center;
-}
-
-td:nth-child(2) {
-  text-align: right;
 }
 
 /*# sourceMappingURL=style.css.map */
