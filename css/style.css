@@ -82,8 +82,6 @@ header {
   flex-direction: column;
   width: 550px;
   height: 825px;
-  background-color: #f9d2d2;
-  font-family: "Devonshire", cursive;
   box-shadow: 0px 0px 8px #a6a6a6;
   margin-bottom: 100px;
   padding: 30px 80px;
@@ -130,11 +128,13 @@ header {
   align-items: center;
   justify-content: center;
 }
-.menu__footer i {
-  margin-right: 15px;
-}
 .menu__footer h3 {
   font-size: 30px;
+}
+
+.menu1 {
+  background-color: #f9d2d2;
+  font-family: "Devonshire", cursive;
 }
 
 /* ------------- footer ------------- */
@@ -178,12 +178,21 @@ header {
 }
 
 /* ------------- main ------------- */
+.menucontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  margin: auto;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
   width: 550px;
   height: 825px;
-  background-color: #f9d2d2;
+  box-shadow: 0px 0px 8px #a6a6a6;
   margin-bottom: 100px;
   padding: 30px 80px;
 }
@@ -203,7 +212,7 @@ header {
 .menu__body__title {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .menu__body__title p {
   margin: 8px;
@@ -213,6 +222,7 @@ header {
 .menu__body__section {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 .menu__body__section__meal {
   justify-content: flex-start;
@@ -228,11 +238,258 @@ header {
   align-items: center;
   justify-content: center;
 }
-.menu__footer i {
-  margin-right: 15px;
+.menu__footer h3 {
+  font-size: 30px;
+}
+
+.menu2 {
+  background-color: #FEF3F3;
+  font-family: "Katibeh", cursive;
+}
+.menu2 h2 {
+  background: linear-gradient(to bottom right, #ff9900 0%, #e67300 1%, #8080ff 100%);
+  background-clip: border-box;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin: 50px;
+  filter: brightness(120%);
+}
+
+/* ------------- footer ------------- */
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #569c87;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+footer a {
+  text-decoration: none;
+  color: #ffcc00;
+}
+footer p {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+footer p:hover {
+  animation: wiggle ease-in-out 500ms infinite;
+}
+
+/* ------------- body ------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 400;
+  color: #ffcc00;
+}
+
+/* ------------- header ------------- */
+header {
+  background-color: #569c87;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  margin-bottom: 30px;
+}
+
+/* ------------- main ------------- */
+.menucontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  margin: auto;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  height: 825px;
+  box-shadow: 0px 0px 8px #a6a6a6;
+  margin-bottom: 100px;
+  padding: 30px 80px;
+}
+.menu__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.menu__header h2 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+.menu__body {
+  font-family: "Kalam", cursive;
+}
+.menu__body__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.menu__body__title p {
+  margin: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.menu__body__section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu__body__section__meal {
+  justify-content: flex-start;
+  text-align: start;
+}
+.menu__body__section__price {
+  justify-content: flex-end;
+  text-align: end;
+}
+.menu__footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .menu__footer h3 {
   font-size: 30px;
+}
+
+.menu3 {
+  background-color: #eeeef6;
+}
+.menu3 h2 {
+  font-family: "Dancing Script", cursive;
+  background: linear-gradient(to bottom right, #0000b3 0%, #3385ff 70%);
+  background-clip: border-box;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin: 50px;
+}
+
+/* ------------- footer ------------- */
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #569c87;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+footer a {
+  text-decoration: none;
+  color: #ffcc00;
+}
+footer p {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+footer p:hover {
+  animation: wiggle ease-in-out 500ms infinite;
+}
+
+/* ------------- body ------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 400;
+  color: #ffcc00;
+}
+
+/* ------------- header ------------- */
+header {
+  background-color: #569c87;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  margin-bottom: 30px;
+}
+
+/* ------------- main ------------- */
+.menucontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  margin: auto;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  height: 825px;
+  box-shadow: 0px 0px 8px #a6a6a6;
+  margin-bottom: 100px;
+  padding: 30px 80px;
+}
+.menu__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.menu__header h2 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+.menu__body {
+  font-family: "Kalam", cursive;
+}
+.menu__body__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.menu__body__title p {
+  margin: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.menu__body__section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu__body__section__meal {
+  justify-content: flex-start;
+  text-align: start;
+}
+.menu__body__section__price {
+  justify-content: flex-end;
+  text-align: end;
+}
+.menu__footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.menu__footer h3 {
+  font-size: 30px;
+}
+
+.menu4 {
+  background-color: #fff;
+}
+.menu4 h2 {
+  font-family: "Kaushan Script", cursive;
+  background: linear-gradient(to bottom right, #006600 0%, #bdfd81 70%);
+  background-clip: border-box;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin: 50px;
 }
 
 /* ------------- footer ------------- */
@@ -311,17 +568,17 @@ a {
   height: 100%;
 }
 
-.menu1 {
+.card1 {
   background-color: #f9d2d2;
 }
-.menu1 h2 {
+.card1 h2 {
   font-family: "Devonshire", cursive;
   font-weight: normal;
   margin: 0;
   color: black;
   /* DRY */
 }
-.menu1 h3 {
+.card1 h3 {
   font-family: "Sriracha", cursive;
   font-size: 50px;
   font-weight: lighter;
@@ -338,11 +595,11 @@ i {
   -webkit-background-clip: text;
 }
 
-.menu2 {
+.card2 {
   background-color: #FEF3F3;
   font-family: "Katibeh", cursive;
 }
-.menu2 h2 {
+.card2 h2 {
   background: linear-gradient(to bottom right, #ff9900 0%, #e67300 1%, #8080ff 100%);
   background-clip: border-box;
   background-clip: text;
@@ -351,17 +608,17 @@ i {
   margin: 0;
   filter: brightness(120%);
 }
-.menu2 h3 {
+.card2 h3 {
   font-size: 50px;
   color: #cc7a00;
   font-weight: normal;
   margin: 0;
 }
 
-.menu3 {
+.card3 {
   background-color: #eeeef6;
 }
-.menu3 h2 {
+.card3 h2 {
   font-family: "Dancing Script", cursive;
   background: linear-gradient(to bottom right, #0000b3 0%, #3385ff 70%);
   background-clip: border-box;
@@ -370,7 +627,7 @@ i {
   -webkit-background-clip: text;
   margin: 0;
 }
-.menu3 h3 {
+.card3 h3 {
   font-family: "Kalam", cursive;
   font-size: 50px;
   font-weight: normal;
@@ -378,10 +635,10 @@ i {
   margin: 0;
 }
 
-.menu4 {
+.card4 {
   background-color: #fff;
 }
-.menu4 h2 {
+.card4 h2 {
   font-family: "Kaushan Script", cursive;
   background: linear-gradient(to bottom right, #006600 0%, #bdfd81 70%);
   background-clip: border-box;
@@ -390,7 +647,7 @@ i {
   background-clip: text;
   margin: 0;
 }
-.menu4 h3 {
+.card4 h3 {
   font-family: "Kalam", cursive;
   font-size: 50px;
   font-weight: normal;

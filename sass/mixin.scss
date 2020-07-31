@@ -52,74 +52,66 @@
 }
 
 @mixin menudisplay {
-    .menu {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    height: 825px;
+    box-shadow: 0px 0px 8px $color-bs;
+    margin-bottom: 100px;
+    padding: 30px 80px;
+
+    &__header {
         display: flex;
         flex-direction: column;
-        width: 550px;
-        height: 825px;
-        background-color: #f9d2d2;
-        font-family: 'Devonshire', cursive;
-        box-shadow: 0px 0px 8px $color-bs;
-        margin-bottom: 100px;
-        padding: 30px 80px;
-    
-        &__header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            h2 {
-                font-size: 40px;
-                margin: 10px 0;
-            }
+        align-items: center;
+        justify-content: center;
+        h2 {
+            font-size: 40px;
+            margin: 10px 0;
         }
-    
-        &__body {
-            font-family: 'Kalam', cursive;
-    
-            &__title {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                
-                p {
-                    margin: 8px;
-                    font-size: 20px;
-                    font-weight: bold;
-                }
-            }
-        
-            &__section {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-        
-                &__meal {
-                    justify-content: flex-start;
-                    text-align: start;
-                }
-                
-                &__price {
-                    justify-content: flex-end;
-                    text-align: end;
-                }
-            }
-    
-        }
-    
-        &__footer {
+    }
+
+    &__body {
+        font-family: 'Kalam', cursive;
+
+        &__title {
             display: flex;
             flex-direction: row;
-            align-items: center;
-            justify-content: center;
+            justify-content: space-evenly;
+            
+            p {
+                margin: 8px;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
     
-            i {
-                margin-right: 15px;
+        &__section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+    
+            &__meal {
+                justify-content: flex-start;
+                text-align: start;
             }
             
-            h3 {
-                font-size: 30px;
+            &__price {
+                justify-content: flex-end;
+                text-align: end;
             }
+        }
+
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+        h3 {
+            font-size: 30px;
         }
     }
 }

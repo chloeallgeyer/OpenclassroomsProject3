@@ -1,0 +1,42 @@
+/* ------------- body ------------- */
+body {
+    @include body;
+}
+
+/* ------------- header ------------- */
+header {
+    @include header;
+}
+
+/* ------------- main ------------- */
+.menucontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    margin: auto;
+}
+
+.menu {
+    @include menudisplay;
+}
+
+.menu3 {
+    background-color: #eeeef6;
+   
+    h2 {
+        font-family: 'Dancing Script', cursive;
+        background: linear-gradient(to bottom right,#0000b3 0%, #3385ff 70%);
+        background-clip: border-box;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        margin: 50px;
+    }
+}
+
+/* ------------- footer ------------- */
+footer {
+    @include footer;
+}
