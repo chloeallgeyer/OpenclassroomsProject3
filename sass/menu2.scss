@@ -32,9 +32,11 @@ header {
         background-clip: text;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
-        margin: 50px;
+
         filter: brightness(120%);
-        }
+    }
+
+    svg {}
 }
 
 /* ------------- footer ------------- */

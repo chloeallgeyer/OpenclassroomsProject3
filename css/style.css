@@ -78,13 +78,16 @@ header {
 }
 
 .menu {
+  margin: 30px;
+  padding: 30px;
+  width: 50%;
+  height: 50%;
+  box-shadow: 0px 0px 8px #a6a6a6;
   display: flex;
   flex-direction: column;
-  width: 550px;
-  height: 825px;
-  box-shadow: 0px 0px 8px #a6a6a6;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 100px;
-  padding: 30px 80px;
 }
 .menu__header {
   display: flex;
@@ -94,20 +97,39 @@ header {
 }
 .menu__header h2 {
   font-size: 40px;
-  margin: 10px 0;
+  margin: 10px 0 30px 0;
 }
 .menu__body {
   font-family: "Kalam", cursive;
+  width: 90%;
 }
 .menu__body__title {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  width: 100%;
 }
 .menu__body__title p {
   margin: 8px;
   font-size: 20px;
   font-weight: bold;
+  position: relative;
+  white-space: nowrap;
+}
+.menu__body__title p:after {
+  content: " ";
+  position: absolute;
+  height: 3px;
+  background-color: black;
+  border-radius: 4rem;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  transition: width 500ms ease;
+}
+.menu__body__title p:hover:after {
+  width: 100%;
+}
+.menu__body__title svg {
+  flex-grow: 1;
 }
 .menu__body__section {
   display: flex;
@@ -130,6 +152,9 @@ header {
 }
 .menu__footer h3 {
   font-size: 30px;
+}
+.menu__footer i {
+  margin-right: 15px;
 }
 
 .menu1 {
@@ -188,13 +213,16 @@ header {
 }
 
 .menu {
+  margin: 30px;
+  padding: 30px;
+  width: 50%;
+  height: 50%;
+  box-shadow: 0px 0px 8px #a6a6a6;
   display: flex;
   flex-direction: column;
-  width: 550px;
-  height: 825px;
-  box-shadow: 0px 0px 8px #a6a6a6;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 100px;
-  padding: 30px 80px;
 }
 .menu__header {
   display: flex;
@@ -204,20 +232,39 @@ header {
 }
 .menu__header h2 {
   font-size: 40px;
-  margin: 10px 0;
+  margin: 10px 0 30px 0;
 }
 .menu__body {
   font-family: "Kalam", cursive;
+  width: 90%;
 }
 .menu__body__title {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  width: 100%;
 }
 .menu__body__title p {
   margin: 8px;
   font-size: 20px;
   font-weight: bold;
+  position: relative;
+  white-space: nowrap;
+}
+.menu__body__title p:after {
+  content: " ";
+  position: absolute;
+  height: 3px;
+  background-color: black;
+  border-radius: 4rem;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  transition: width 500ms ease;
+}
+.menu__body__title p:hover:after {
+  width: 100%;
+}
+.menu__body__title svg {
+  flex-grow: 1;
 }
 .menu__body__section {
   display: flex;
@@ -241,6 +288,9 @@ header {
 .menu__footer h3 {
   font-size: 30px;
 }
+.menu__footer i {
+  margin-right: 15px;
+}
 
 .menu2 {
   background-color: #FEF3F3;
@@ -252,10 +302,8 @@ header {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  margin: 50px;
   filter: brightness(120%);
 }
-
 /* ------------- footer ------------- */
 footer {
   display: flex;
@@ -307,13 +355,16 @@ header {
 }
 
 .menu {
+  margin: 30px;
+  padding: 30px;
+  width: 50%;
+  height: 50%;
+  box-shadow: 0px 0px 8px #a6a6a6;
   display: flex;
   flex-direction: column;
-  width: 550px;
-  height: 825px;
-  box-shadow: 0px 0px 8px #a6a6a6;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 100px;
-  padding: 30px 80px;
 }
 .menu__header {
   display: flex;
@@ -323,20 +374,39 @@ header {
 }
 .menu__header h2 {
   font-size: 40px;
-  margin: 10px 0;
+  margin: 10px 0 30px 0;
 }
 .menu__body {
   font-family: "Kalam", cursive;
+  width: 90%;
 }
 .menu__body__title {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  width: 100%;
 }
 .menu__body__title p {
   margin: 8px;
   font-size: 20px;
   font-weight: bold;
+  position: relative;
+  white-space: nowrap;
+}
+.menu__body__title p:after {
+  content: " ";
+  position: absolute;
+  height: 3px;
+  background-color: black;
+  border-radius: 4rem;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  transition: width 500ms ease;
+}
+.menu__body__title p:hover:after {
+  width: 100%;
+}
+.menu__body__title svg {
+  flex-grow: 1;
 }
 .menu__body__section {
   display: flex;
@@ -359,6 +429,9 @@ header {
 }
 .menu__footer h3 {
   font-size: 30px;
+}
+.menu__footer i {
+  margin-right: 15px;
 }
 
 .menu3 {
@@ -372,6 +445,7 @@ header {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   margin: 50px;
+  padding: 3px;
 }
 
 /* ------------- footer ------------- */
@@ -425,13 +499,16 @@ header {
 }
 
 .menu {
+  margin: 30px;
+  padding: 30px;
+  width: 50%;
+  height: 50%;
+  box-shadow: 0px 0px 8px #a6a6a6;
   display: flex;
   flex-direction: column;
-  width: 550px;
-  height: 825px;
-  box-shadow: 0px 0px 8px #a6a6a6;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 100px;
-  padding: 30px 80px;
 }
 .menu__header {
   display: flex;
@@ -441,20 +518,39 @@ header {
 }
 .menu__header h2 {
   font-size: 40px;
-  margin: 10px 0;
+  margin: 10px 0 30px 0;
 }
 .menu__body {
   font-family: "Kalam", cursive;
+  width: 90%;
 }
 .menu__body__title {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  width: 100%;
 }
 .menu__body__title p {
   margin: 8px;
   font-size: 20px;
   font-weight: bold;
+  position: relative;
+  white-space: nowrap;
+}
+.menu__body__title p:after {
+  content: " ";
+  position: absolute;
+  height: 3px;
+  background-color: black;
+  border-radius: 4rem;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  transition: width 500ms ease;
+}
+.menu__body__title p:hover:after {
+  width: 100%;
+}
+.menu__body__title svg {
+  flex-grow: 1;
 }
 .menu__body__section {
   display: flex;
@@ -478,6 +574,9 @@ header {
 .menu__footer h3 {
   font-size: 30px;
 }
+.menu__footer i {
+  margin-right: 15px;
+}
 
 .menu4 {
   background-color: #fff;
@@ -490,6 +589,7 @@ header {
   -webkit-background-clip: text;
   background-clip: text;
   margin: 50px;
+  padding: 5px;
 }
 
 /* ------------- footer ------------- */
@@ -533,11 +633,119 @@ header {
 }
 
 /* ------------- main ------------- */
+.mainpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.menudisplay {
+  margin: 30px;
+  padding: 30px;
+  width: 50%;
+  height: 50%;
+  min-width: 360px;
+  box-shadow: 0px 0px 8px #a6a6a6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9d2d2;
+  font-family: "Devonshire", cursive;
+}
+
+.entete {
+  display: flex;
+  font-size: 25px;
+}
+
+.contenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.meals {
+  justify-content: flex-start;
+  padding-left: 0;
+}
+
+.prices {
+  justify-content: flex-end;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ------------- footer ------------- */
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #569c87;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+footer a {
+  text-decoration: none;
+  color: #ffcc00;
+}
+footer p {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+footer p:hover {
+  animation: wiggle ease-in-out 500ms infinite;
+}
+
+/* ------------- body ------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 400;
+  color: #ffcc00;
+}
+
+/* ------------- header ------------- */
+header {
+  background-color: #569c87;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  margin-bottom: 30px;
+}
+header a {
+  text-decoration: none;
+  color: #ffcc00;
+}
+
+/* ------------- main ------------- */
 .block {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.block a {
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
 }
 .block__item {
   display: flex;
@@ -555,17 +763,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-a {
-  display: inline-block;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  width: 100%;
-  height: 100%;
 }
 
 .card1 {
@@ -626,6 +823,7 @@ i {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   margin: 0;
+  padding: 3px;
 }
 .card3 h3 {
   font-family: "Kalam", cursive;
@@ -638,7 +836,7 @@ i {
 .card4 {
   background-color: #fff;
 }
-.card4 h2 {
+.card4 a span:nth-child(1) {
   font-family: "Kaushan Script", cursive;
   background: linear-gradient(to bottom right, #006600 0%, #bdfd81 70%);
   background-clip: border-box;
@@ -646,8 +844,10 @@ i {
   -webkit-background-clip: text;
   background-clip: text;
   margin: 0;
+  padding: 5px;
+  font-size: 40px;
 }
-.card4 h3 {
+.card4 a span:nth-child(2) {
   font-family: "Kalam", cursive;
   font-size: 50px;
   font-weight: normal;
