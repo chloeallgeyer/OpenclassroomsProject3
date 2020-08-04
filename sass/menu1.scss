@@ -28,6 +28,20 @@ header {
     font-family: 'Devonshire', cursive;
 }
 
+table {
+    tr {
+        td {
+            padding: 10px;
+            &:nth-child(1) {
+                text-align: left;
+            }
+            &:nth-child(2) {
+                font-weight: bold;
+                text-align: right;
+            }
+        }
+    }
+}
 
 /* ------------- footer ------------- */
 footer {

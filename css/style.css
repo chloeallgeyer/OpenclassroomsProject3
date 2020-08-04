@@ -98,6 +98,8 @@ header {
 .menu__header h2 {
   font-size: 40px;
   margin: 10px 0 30px 0;
+  text-align: center;
+  white-space: nowrap;
 }
 .menu__body {
   font-family: "Kalam", cursive;
@@ -131,19 +133,6 @@ header {
 .menu__body__title svg {
   flex-grow: 1;
 }
-.menu__body__section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.menu__body__section__meal {
-  justify-content: flex-start;
-  text-align: start;
-}
-.menu__body__section__price {
-  justify-content: flex-end;
-  text-align: end;
-}
 .menu__footer {
   display: flex;
   flex-direction: row;
@@ -152,6 +141,8 @@ header {
 }
 .menu__footer h3 {
   font-size: 30px;
+  text-align: center;
+  white-space: nowrap;
 }
 .menu__footer i {
   margin-right: 15px;
@@ -160,6 +151,17 @@ header {
 .menu1 {
   background-color: #f9d2d2;
   font-family: "Devonshire", cursive;
+}
+
+table tr td {
+  padding: 10px;
+}
+table tr td:nth-child(1) {
+  text-align: left;
+}
+table tr td:nth-child(2) {
+  font-weight: bold;
+  text-align: right;
 }
 
 /* ------------- footer ------------- */
@@ -233,6 +235,8 @@ header {
 .menu__header h2 {
   font-size: 40px;
   margin: 10px 0 30px 0;
+  text-align: center;
+  white-space: nowrap;
 }
 .menu__body {
   font-family: "Kalam", cursive;
@@ -266,19 +270,6 @@ header {
 .menu__body__title svg {
   flex-grow: 1;
 }
-.menu__body__section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.menu__body__section__meal {
-  justify-content: flex-start;
-  text-align: start;
-}
-.menu__body__section__price {
-  justify-content: flex-end;
-  text-align: end;
-}
 .menu__footer {
   display: flex;
   flex-direction: row;
@@ -287,6 +278,8 @@ header {
 }
 .menu__footer h3 {
   font-size: 30px;
+  text-align: center;
+  white-space: nowrap;
 }
 .menu__footer i {
   margin-right: 15px;
@@ -304,6 +297,7 @@ header {
   -webkit-background-clip: text;
   filter: brightness(120%);
 }
+
 /* ------------- footer ------------- */
 footer {
   display: flex;
@@ -375,6 +369,8 @@ header {
 .menu__header h2 {
   font-size: 40px;
   margin: 10px 0 30px 0;
+  text-align: center;
+  white-space: nowrap;
 }
 .menu__body {
   font-family: "Kalam", cursive;
@@ -408,19 +404,6 @@ header {
 .menu__body__title svg {
   flex-grow: 1;
 }
-.menu__body__section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.menu__body__section__meal {
-  justify-content: flex-start;
-  text-align: start;
-}
-.menu__body__section__price {
-  justify-content: flex-end;
-  text-align: end;
-}
 .menu__footer {
   display: flex;
   flex-direction: row;
@@ -429,6 +412,8 @@ header {
 }
 .menu__footer h3 {
   font-size: 30px;
+  text-align: center;
+  white-space: nowrap;
 }
 .menu__footer i {
   margin-right: 15px;
@@ -447,6 +432,9 @@ header {
   margin: 50px;
   padding: 3px;
 }
+.menu3 #Calque_1 {
+  fill: blue;
+}
 
 /* ------------- footer ------------- */
 footer {
@@ -519,6 +507,8 @@ header {
 .menu__header h2 {
   font-size: 40px;
   margin: 10px 0 30px 0;
+  text-align: center;
+  white-space: nowrap;
 }
 .menu__body {
   font-family: "Kalam", cursive;
@@ -552,19 +542,6 @@ header {
 .menu__body__title svg {
   flex-grow: 1;
 }
-.menu__body__section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.menu__body__section__meal {
-  justify-content: flex-start;
-  text-align: start;
-}
-.menu__body__section__price {
-  justify-content: flex-end;
-  text-align: end;
-}
 .menu__footer {
   display: flex;
   flex-direction: row;
@@ -573,6 +550,8 @@ header {
 }
 .menu__footer h3 {
   font-size: 30px;
+  text-align: center;
+  white-space: nowrap;
 }
 .menu__footer i {
   margin-right: 15px;
@@ -768,20 +747,19 @@ header a {
 .card1 {
   background-color: #f9d2d2;
 }
-.card1 h2 {
+.card1 span:nth-child(2) {
   font-family: "Devonshire", cursive;
   font-weight: normal;
+  font-size: 40px;
   margin: 0;
   color: black;
-  /* DRY */
 }
-.card1 h3 {
+.card1 span:nth-child(3) {
   font-family: "Sriracha", cursive;
   font-size: 50px;
   font-weight: lighter;
   margin: 0;
   color: black;
-  /* DRY */
 }
 
 i {
@@ -796,16 +774,17 @@ i {
   background-color: #FEF3F3;
   font-family: "Katibeh", cursive;
 }
-.card2 h2 {
+.card2 span:nth-child(1) {
   background: linear-gradient(to bottom right, #ff9900 0%, #e67300 1%, #8080ff 100%);
   background-clip: border-box;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  font-size: 40px;
   margin: 0;
   filter: brightness(120%);
 }
-.card2 h3 {
+.card2 span:nth-child(2) {
   font-size: 50px;
   color: #cc7a00;
   font-weight: normal;
@@ -815,7 +794,7 @@ i {
 .card3 {
   background-color: #eeeef6;
 }
-.card3 h2 {
+.card3 span:nth-child(1) {
   font-family: "Dancing Script", cursive;
   background: linear-gradient(to bottom right, #0000b3 0%, #3385ff 70%);
   background-clip: border-box;
@@ -823,9 +802,10 @@ i {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   margin: 0;
+  font-size: 40px;
   padding: 3px;
 }
-.card3 h3 {
+.card3 span:nth-child(2) {
   font-family: "Kalam", cursive;
   font-size: 50px;
   font-weight: normal;
@@ -836,7 +816,7 @@ i {
 .card4 {
   background-color: #fff;
 }
-.card4 a span:nth-child(1) {
+.card4 span:nth-child(1) {
   font-family: "Kaushan Script", cursive;
   background: linear-gradient(to bottom right, #006600 0%, #bdfd81 70%);
   background-clip: border-box;
@@ -847,7 +827,7 @@ i {
   padding: 5px;
   font-size: 40px;
 }
-.card4 a span:nth-child(2) {
+.card4 span:nth-child(2) {
   font-family: "Kalam", cursive;
   font-size: 50px;
   font-weight: normal;
