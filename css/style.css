@@ -79,9 +79,11 @@ header {
 
 .menu {
   margin: 30px;
-  padding: 30px;
-  width: 50%;
-  height: 50%;
+  padding: 80px 30px 80px 30px;
+  width: 80%;
+  height: 80%;
+  max-width: 800px;
+  max-height: 1200px;
   box-shadow: 0px 0px 8px #a6a6a6;
   display: flex;
   flex-direction: column;
@@ -89,14 +91,18 @@ header {
   justify-content: center;
   margin-bottom: 100px;
 }
+.menu section {
+  margin-bottom: 50px;
+}
 .menu__header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 30px 0;
 }
 .menu__header h2 {
-  font-size: 40px;
+  font-size: 50px;
   margin: 10px 0 30px 0;
   text-align: center;
   white-space: nowrap;
@@ -116,23 +122,6 @@ header {
   position: relative;
   white-space: nowrap;
 }
-.menu__body__title p:after {
-  content: " ";
-  position: absolute;
-  height: 3px;
-  background-color: black;
-  border-radius: 4rem;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  transition: width 500ms ease;
-}
-.menu__body__title p:hover:after {
-  width: 100%;
-}
-.menu__body__title svg {
-  flex-grow: 1;
-}
 .menu__footer {
   display: flex;
   flex-direction: row;
@@ -151,6 +140,20 @@ header {
 .menu1 {
   background-color: #f9d2d2;
   font-family: "Devonshire", cursive;
+}
+.menu1 p:after {
+  content: " ";
+  position: absolute;
+  height: 3px;
+  background-color: black;
+  border-radius: 4rem;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  transition: width 500ms ease;
+}
+.menu1 p:hover:after {
+  width: 100%;
 }
 
 table tr td {
@@ -216,9 +219,11 @@ header {
 
 .menu {
   margin: 30px;
-  padding: 30px;
-  width: 50%;
-  height: 50%;
+  padding: 80px 30px 80px 30px;
+  width: 80%;
+  height: 80%;
+  max-width: 800px;
+  max-height: 1200px;
   box-shadow: 0px 0px 8px #a6a6a6;
   display: flex;
   flex-direction: column;
@@ -226,14 +231,18 @@ header {
   justify-content: center;
   margin-bottom: 100px;
 }
+.menu section {
+  margin-bottom: 50px;
+}
 .menu__header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 30px 0;
 }
 .menu__header h2 {
-  font-size: 40px;
+  font-size: 50px;
   margin: 10px 0 30px 0;
   text-align: center;
   white-space: nowrap;
@@ -252,23 +261,6 @@ header {
   font-weight: bold;
   position: relative;
   white-space: nowrap;
-}
-.menu__body__title p:after {
-  content: " ";
-  position: absolute;
-  height: 3px;
-  background-color: black;
-  border-radius: 4rem;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  transition: width 500ms ease;
-}
-.menu__body__title p:hover:after {
-  width: 100%;
-}
-.menu__body__title svg {
-  flex-grow: 1;
 }
 .menu__footer {
   display: flex;
@@ -295,7 +287,76 @@ header {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  filter: brightness(120%);
+}
+.menu2 .starters {
+  color: #cc7a00;
+}
+.menu2 .starters #Calque_1 {
+  fill: url(#Calque_1) #cc7a00;
+}
+.menu2 .starters p:after {
+  content: " ";
+  position: absolute;
+  height: 3px;
+  background-color: #cc7a00;
+  border-radius: 4rem;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  transition: width 500ms ease;
+}
+.menu2 .starters p:hover:after {
+  width: 100%;
+}
+.menu2 .meals {
+  color: #990099;
+}
+.menu2 .meals #Calque_2 {
+  fill: url(#Calque_2) #990099;
+}
+.menu2 .meals p:after {
+  content: " ";
+  position: absolute;
+  height: 3px;
+  background-color: #990099;
+  border-radius: 4rem;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  transition: width 500ms ease;
+}
+.menu2 .meals p:hover:after {
+  width: 100%;
+}
+.menu2 .desserts {
+  color: #7300e6;
+}
+.menu2 .desserts #Calque_3 {
+  fill: url(#Calque_3) #7300e6;
+}
+.menu2 .desserts p:after {
+  content: " ";
+  position: absolute;
+  height: 3px;
+  background-color: #7300e6;
+  border-radius: 4rem;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  transition: width 500ms ease;
+}
+.menu2 .desserts p:hover:after {
+  width: 100%;
+}
+.menu2 table tr td {
+  padding-top: 15px;
+}
+.menu2 table tr td:nth-child(1) {
+  text-align: left;
+}
+.menu2 table tr td:nth-child(2) {
+  font-weight: bold;
+  text-align: right;
 }
 
 /* ------------- footer ------------- */
@@ -350,9 +411,11 @@ header {
 
 .menu {
   margin: 30px;
-  padding: 30px;
-  width: 50%;
-  height: 50%;
+  padding: 80px 30px 80px 30px;
+  width: 80%;
+  height: 80%;
+  max-width: 800px;
+  max-height: 1200px;
   box-shadow: 0px 0px 8px #a6a6a6;
   display: flex;
   flex-direction: column;
@@ -360,14 +423,18 @@ header {
   justify-content: center;
   margin-bottom: 100px;
 }
+.menu section {
+  margin-bottom: 50px;
+}
 .menu__header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 30px 0;
 }
 .menu__header h2 {
-  font-size: 40px;
+  font-size: 50px;
   margin: 10px 0 30px 0;
   text-align: center;
   white-space: nowrap;
@@ -386,23 +453,6 @@ header {
   font-weight: bold;
   position: relative;
   white-space: nowrap;
-}
-.menu__body__title p:after {
-  content: " ";
-  position: absolute;
-  height: 3px;
-  background-color: black;
-  border-radius: 4rem;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  transition: width 500ms ease;
-}
-.menu__body__title p:hover:after {
-  width: 100%;
-}
-.menu__body__title svg {
-  flex-grow: 1;
 }
 .menu__footer {
   display: flex;
@@ -432,8 +482,56 @@ header {
   margin: 50px;
   padding: 3px;
 }
-.menu3 #Calque_1 {
-  fill: blue;
+.menu3 .starters #Calque_1 {
+  fill: url(#Calque_1) #0000cc;
+}
+.menu3 .starters p:after {
+  content: " ";
+  position: absolute;
+  height: 3px;
+  background-color: #0000cc;
+  border-radius: 4rem;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  transition: width 500ms ease;
+}
+.menu3 .starters p:hover:after {
+  width: 100%;
+}
+.menu3 .meals #Calque_2 {
+  fill: url(#Calque_2) #3333ff;
+}
+.menu3 .meals p:after {
+  content: " ";
+  position: absolute;
+  height: 3px;
+  background-color: #3333ff;
+  border-radius: 4rem;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  transition: width 500ms ease;
+}
+.menu3 .meals p:hover:after {
+  width: 100%;
+}
+.menu3 .desserts #Calque_3 {
+  fill: url(#Calque_3) #3385ff;
+}
+.menu3 .desserts p:after {
+  content: " ";
+  position: absolute;
+  height: 3px;
+  background-color: #3385ff;
+  border-radius: 4rem;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  transition: width 500ms ease;
+}
+.menu3 .desserts p:hover:after {
+  width: 100%;
 }
 
 /* ------------- footer ------------- */
@@ -488,9 +586,11 @@ header {
 
 .menu {
   margin: 30px;
-  padding: 30px;
-  width: 50%;
-  height: 50%;
+  padding: 80px 30px 80px 30px;
+  width: 80%;
+  height: 80%;
+  max-width: 800px;
+  max-height: 1200px;
   box-shadow: 0px 0px 8px #a6a6a6;
   display: flex;
   flex-direction: column;
@@ -498,14 +598,18 @@ header {
   justify-content: center;
   margin-bottom: 100px;
 }
+.menu section {
+  margin-bottom: 50px;
+}
 .menu__header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 30px 0;
 }
 .menu__header h2 {
-  font-size: 40px;
+  font-size: 50px;
   margin: 10px 0 30px 0;
   text-align: center;
   white-space: nowrap;
@@ -524,23 +628,6 @@ header {
   font-weight: bold;
   position: relative;
   white-space: nowrap;
-}
-.menu__body__title p:after {
-  content: " ";
-  position: absolute;
-  height: 3px;
-  background-color: black;
-  border-radius: 4rem;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  transition: width 500ms ease;
-}
-.menu__body__title p:hover:after {
-  width: 100%;
-}
-.menu__body__title svg {
-  flex-grow: 1;
 }
 .menu__footer {
   display: flex;

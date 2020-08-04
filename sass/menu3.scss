@@ -36,8 +36,72 @@ header {
         padding: 3px;
     }
 
-    #Calque_1 {
-        fill: blue;
+    .starters {
+        #Calque_1 {
+            fill: url(#Calque_1) #0000cc;
+        }
+        p {
+            &:after {
+                content: ' ';
+                position: absolute;
+                height: 3px;
+                background-color: #0000cc;
+                border-radius: 4rem;
+                left: 0;
+                bottom: 0;
+                width: 0;
+                transition: width 500ms ease;
+            }
+            &:hover:after {
+                width: 100%;
+            }
+        }
+    }
+
+    .meals {
+        #Calque_2 {
+            fill: url(#Calque_2) #3333ff;
+        }
+
+        p {
+            &:after {
+                content: ' ';
+                position: absolute;
+                height: 3px;
+                background-color: #3333ff;
+                border-radius: 4rem;
+                left: 0;
+                bottom: 0;
+                width: 0;
+                transition: width 500ms ease;
+            }
+            &:hover:after {
+                width: 100%;
+            }
+        }
+    }
+
+    .desserts {
+        #Calque_3 {
+            fill: url(#Calque_3) #3385ff;
+        }
+
+        p {
+            &:after {
+                content: ' ';
+                position: absolute;
+                height: 3px;
+                background-color: #3385ff;
+                border-radius: 4rem;
+                left: 0;
+                bottom: 0;
+                width: 0;
+                transition: width 500ms ease;
+            }
+            &:hover:after {
+                width: 100%;
+            }
+        }
     }
 }
 
